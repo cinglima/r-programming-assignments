@@ -1,0 +1,25 @@
+# Assignment #6: Matrix Operations and Construction
+# Blog: https://connorrjournal.blogspot.com/2025/10/assignment-6-matrix-operations-and.html
+
+# 1. Matrix Addition & Subtraction
+A <- matrix(c(2, 0, 1, 3), ncol = 2)
+B <- matrix(c(5, 2, 4, -1), ncol = 2)
+
+# Matrix addition
+AaddB <- A + B
+AaddB
+
+# Matrix subtraction
+AsubtractB <- A - B
+AsubtractB
+
+
+# 2. Create a Diagonal Matrix
+D <- diag(c(4, 1, 2, 3))
+D
+
+# 3. Construct a Custom 5 × 5 Matrix
+firstrow <- c(3, 1, 1, 1, 1)
+bottom <- cbind(2, diag(3, 4))
+M <- rbind(firstrow, bottom)
+M
