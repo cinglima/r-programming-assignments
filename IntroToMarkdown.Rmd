@@ -1,0 +1,53 @@
+---
+title: "My R Markdown Primer"
+author: "Connor Inglima"
+date: "2025-11-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Task 2: Populate the document
+
+# What is R Markdown?
+
+R Markdown lets you write text and run R code in the same document. It is good for homework and data analysis because it shows your code and the results together. After you knit the file, it creates a clean HTML, PDF, or Word document with your text and plots all in one place.
+
+# Narrative Paragraph
+
+R Markdown is useful because it lets you put your writing and your R code in one place. You don’t have to move results from one program to another, and everything stays organized. This makes it easier to explain what you are doing and to show your work for homework or data projects.
+
+# LaTeX Math Example
+
+Inline math example: $2 + 3 = 5$.
+
+Displayed equation:
+
+$$
+x + 1 = 2
+$$
+
+# Load a library and generate a plot
+```{r plot-data, echo=TRUE}
+# Load library
+library(ggplot2)
+
+# Load data
+data(mtcars)
+
+# Create scatterplot of mpg vs hp
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point() +
+  labs(title = "MPG vs Horsepower", x = "Horsepower", y = "Miles per Gallon")
+```
+
+# Reflection
+Using R Markdown is easier than writing a regular report because I could put my text and R code together in one place. I didn’t have to copy results or plots from R into another document, and everything looked neat when I knitted it. It made writing and showing my work better and more organized.
+
+
+
+
+
+
